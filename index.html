@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel = "stylesheet" href="style.css"/>
+    <link rel = "stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo">Woochan (Andy) Jung</div>
+        <div>
+            <ul class ="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                
+
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class = "logo">Woochan (Andy) Jung</div>
+        <div class = "hamburger-menu">
+            <div class ="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id = "profile">
+        <!--<div class = "section__pic-container">
+            <img src= "./assets/pfp.jpg " alt ="andy jung pfp">    
+        </div>-->
+        <div class = "section__text">
+            <p class="section__text__p1">Hi! I'm</p>
+            <h1 class ="title">Andy</h1>
+            <p class = "section__text__p2">Computer Science Student at SFU!</p>
+            <div class = "btn-container">
+                <button 
+                    class ="btn btn-color-2" 
+                    onclick = "window.open('./assets/Omega2.pdf')">
+                my resume
+                <img src="./assets/DOWNLOAD.webp" alt="Download icon" class="emoji">
+            </button>
+                <button
+                    class ="btn btn-color-1" 
+                    onclick = "location.href='./#contact'">
+                contact info
+            </button>
+            </div>
+            <div id = "socials-container">
+                <img 
+                src ="./assets/linkedin.png" 
+                alt = "My linkedin"
+                class = 'icon' 
+                onclick = "location.href='https://www.linkedin.com/in/andy-jung-a7833b291/'"
+                />
+                <img 
+                src ="./assets/github.png" 
+                alt = "my github"
+                class = 'icon' 
+                onclick = "location.href= 'https://github.com/autato'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id = "about">
+        <p class = "section__text__p1">Get to know me more!</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+            <img src= "./assets/pfp.jpg " alt ="andy jung pfp" class="about-pic"/>    
+        </div>
+        <!--<div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/muaythai.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Muay Thai & MMA</h3>
+                <p>6 months <br /></p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              </div>
+            </div>-->
+            <div class="text-container">
+              <p>
+                Hi, my name is Woochan, but you can call me Andy.</br></br>I'm a Computer Science / Engineering student at Simon Fraser University. I'm interested in computer vision, machine learning and the math behind it! <br /><br />
+                Outside of school, you can catch me practicing Muay Thai, guitar, and playing video games!
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+        <!--<div class="hobby-icons"></div>
+        <img
+          src="./assets/muaythai.webp"
+          alt="Muaythai icon"
+          class="hobby-icons"
+        />-->
+    </div>
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Checkout My</p>
+        <h1 class="title">Experiences</h1>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3>Software Developer</h3>
+                <p class="company"><em>Google Developer Student Club • December 2023 - Present</em></p>
+                <p class="description">
+                    • Collaboratively designed and developed multiple projects with fellow students</br>
+                    • Developed a full-stack web application using NextJS, JavaScript, CSS and NeonDB to create websites</br>
+                    • Recieved 1st place at Hack the sem, representing the finance sector, hosted by Google Developer Student Club
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Software Developer</h3>
+                <p class="company"><em>SFU Robot Soccer • September 2024 – Present </em></p>
+                <p class="description">
+                    •Contributed to enhancing software by designing and implementing new AI-driven features</br>
+                    •Developed and utilized AI algorithms to create match-winning tactics for robotic applications</br>
+                    •Employed graphical simulations to virtually test and optimize a fleet of robots</br>
+                </p>
+            </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Checkout my work!</p>
+            <h1 class="title">Projects</h1>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="/assets/gradgains.png" alt="Project 1">
+                    <div class="project-info">
+                      <h3>Grad Gains</h3>
+                      <p>A social app to engage SFU students in investing through community-building features.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/assets/fitpal.webp" alt="Project 2">
+                    <div class="project-info">
+                      <h3>Fit-pal</h3>
+                      <p>Webapp using Flask and OpenCV to correct/track user's excercise forms and give feedback.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/assets/sydekick.webp" alt="Project 3">
+                    <div class="project-info">
+                      <h3>Syde-Kick AI</h3>
+                      <p>AI model that provides live hit-detection feedback for MMA (Mixed Martial Arts) footage. </p>
+                    </div>
+                </div>
+                <div id="contact" class="contact-container">
+                  <h2 class="contact-title">Get in touch</h2>
+                  <p class="contact-subtitle">Feel free to contact me in any of these ways!</p>
+                  <div class="contact-info">
+                    <a href="mailto:waj4@sfu.ca" target="_blank" class="contact-item">
+                        <img src="./assets/email.png" alt="Email Icon" class="contact-icon">
+                        <p>waj4@sfu.ca</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/andyjung/" target="_blank" class="contact-item">
+                        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+                        <p>Andy Jung</p>
+                    </a>
+                    <a href="https://github.com/autato" target="_blank" class="contact-item">
+                        <img src="./assets/github.png" alt="GitHub Icon" class="contact-icon">
+                        <p>autato</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
