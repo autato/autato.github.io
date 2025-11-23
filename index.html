@@ -4,224 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-    <link rel = "stylesheet" href="style.css"/>
-    <link rel = "stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
-<body>
-    <nav id = "desktop-nav">
-        <div class = "logo">Woochan (Andy) Jung</div>
-        <div>
-            <ul class ="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experiences</a></li>
-                <li><a href="#projects">Projects</a></li>
-                
 
-            </ul>
-        </div>
+<body>
+    <!-- NAVIGATION -->
+    <nav id="desktop-nav">
+        <div class="logo">Woochan (Andy) Jung</div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
     </nav>
-    <nav id = "hamburger-nav">
-        <div class = "logo">Woochan (Andy) Jung</div>
-        <div class = "hamburger-menu">
-            <div class ="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Woochan (Andy) Jung</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
             </div>
-            <div class = "menu-links">
+            <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             </div>
         </div>
     </nav>
-    <section id = "profile">
-    <!--<div class = "section__pic-container">
-      <img src="./assets/pfp.jpg" alt="andy jung pfp">    
-    </div>-->
-        <div class = "section__text">
+
+    <!-- PROFILE -->
+    <section id="profile">
+        <div class="section__text">
             <p class="section__text__p1">Hi! I'm</p>
-            <h1 class ="title">Andy</h1>
-            <p class = "section__text__p2">Computer Science Student at SFU!</p>
-            <div class = "btn-container">
-                <button 
-                    class ="btn btn-color-2" 
-                    onclick = "window.open('./assets/Woochan_Jung_Resume.pdf')">
-                my resume
-                <img src="./assets/DOWNLOAD.webp" alt="Download icon" class="emoji">
-            </button>
-                <button
-                    class ="btn btn-color-1" 
-                    onclick = "location.href='./#contact'">
-                contact info
-            </button>
+            <h1 class="title">Andy</h1>
+            <p class="section__text__p2">Computer Science Student at SFU!</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/Woochan_Jung_Resume.pdf')">
+                    my resume <img src="./assets/DOWNLOAD.webp" class="emoji">
+                </button>
+
+                <button class="btn btn-color-2" onclick="location.href='#contact'">
+                    contact info
+                </button>
             </div>
-      <div id = "socials-container">
-        <img 
-        src="./assets/linkedin.png" 
-        alt="my linkedin"
-        class="icon" 
-        onclick="location.href='https://www.linkedin.com/in/woochan-jung-a7833b291/'"
-        />
-        <img 
-        src="./assets/github.png" 
-        alt="my github"
-        class="icon" 
-        onclick="location.href='https://github.com/autato'"
-        />
-      </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" class="icon"
+                     onclick="location.href='https://www.linkedin.com/in/woochan-jung-a7833b291/'"/>
+                <img src="./assets/github.png" class="icon"
+                     onclick="location.href='https://github.com/autato'"/>
+            </div>
         </div>
     </section>
-    <section id = "about">
-        <p class = "section__text__p1">Get to know me more!</p>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <p class="section__text__p1">Get to know me more!</p>
         <h1 class="title">About Me</h1>
+
         <div class="section-container">
-      <div class="section__pic-container">
-      <img src="./assets/newpfp.jpg" alt="andy jung pfp" class="about-pic"/>    
-    </div>
-        <!--<div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/muaythai.webp"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Muay Thai & MMA</h3>
-                <p>6 months <br /></p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-              </div>
-            </div>-->
+            <div class="section__pic-container about-pic-container">
+                <img src="./assets/newpfp.jpg" class="about-pic">
+            </div>
+
             <div class="text-container">
-              <p>
-                Hi, my name is Woochan, but you can call me Andy.<br /><br />I'm a Computer Science / Engineering student at Simon Fraser University. I'm interested in computer vision, machine learning and the math behind it! <br /><br />
-                Outside of school, you can catch me practicing Muay Thai, guitar, and playing video games!
-              </p>
+                <p>
+                    Hi, my name is Woochan, but you can call me Andy.<br><br>
+                    I'm a Computer Science / Engineering student at Simon Fraser University.
+                    I'm interested in computer vision, machine learning and the math behind it!<br><br>
+                    Outside of school, you can catch me practicing Muay Thai, guitar, and playing video games!
+                </p>
             </div>
-          </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-        <!--<div class="hobby-icons"></div>
-        <img
-          src="./assets/muaythai.webp"
-          alt="Muaythai icon"
-          class="hobby-icons"
-        />-->
+
+        <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='#experience'"/>
+    </section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <p class="section__text__p1">Checkout My</p>
+    <h1 class="title">Experiences</h1>
+
+    <div class="experience-container">
+
+        <!-- HARRIS -->
+        <div class="experience-item">
+            <h3>AI Software Engineer, Co-op</h3>
+            <p class="company"><strong>Harris Computer</strong> • Remote • <em>October 2025 – Present</em></p>
+            <p class="description">
+                &bull; Scaled <strong>Matcha.ai</strong>, an internal <strong>LLM</strong>-powered copilot, used by <strong>13k+</strong> employees across <strong>200+</strong> subsidiaries.<br>
+                &bull; Shipped full-stack features in <strong>React</strong> and <strong>PostgreSQL</strong> and integrated LLM workflows using <strong>LangChain</strong>.<br>
+                &bull; Worked on <strong>RAG</strong> pipelines integrating <strong>vector search</strong> and enterprise data to power domain-specific chats and copilots.<br>
+                &bull; Designed LLM orchestration with <strong>prompt routing</strong>, <strong>memory systems</strong>, and <strong>multi-model pipelines</strong>.<br>
+                &bull; Delivered production features such as <strong>NanoBanana</strong> integration and <strong>LLM-driven PowerPoint</strong> generation workflows.<br>
+                &bull; Contributed in a fast-moving lean team, shipping <strong>weekly releases</strong> with rapid bug fixes and new feature updates.<br>
+            </p>
+        </div>
+
+        <!-- OSI -->
+        <div class="experience-item">
+            <h3>Software Engineer, Co-op</h3>
+            <p class="company"><strong>OSI Maritime Systems</strong> • Burnaby, BC • <em>January 2025 – August 2025</em></p>
+            <p class="description">
+                &bull; Built <strong>SmartData</strong>, an internal AI data-anomaly detection tool using <strong>Flask</strong>, <strong>React</strong>, and <strong>SQLite3</strong>, deployed on <strong>IIS</strong>.<br>
+                &bull; Automated <strong>Vessel Sensor Data QA</strong> checks, reducing validation time by <strong>50%</strong> and supporting <strong>40+</strong> system engineers.<br>
+                &bull; Developed the multivariate <strong>XGBoost</strong> model powering SmartData to run data anomaly detection in <strong>Python</strong>.<br>
+                &bull; Ingested and transformed vessel system Excel sheets using <strong>Pandas</strong> and <strong>scikit-learn</strong> for clean training and inference.<br>
+                &bull; Improved accuracy through <strong>data cleaning</strong>, <strong>feature engineering</strong>, and class rebalancing using <strong>random oversampling</strong>.<br>
+            </p>
+        </div>
+
+        <!-- ROBOT SOCCER -->
+        <div class="experience-item club">
+            <h3>Reinforcement Learning Engineer</h3>
+            <p class="company"><strong>SFU Robot Soccer</strong> • <em>September 2024 – Present</em></p>
+            <p class="description">
+                &bull; Trained multi-agent RL agents using <strong>PyTorch</strong> and <strong>Stable-Baselines3</strong> to improve autonomous robot soccer games.<br>
+                &bull; Created custom simulation environments with <strong>MuJoCo</strong> and <strong>C++</strong> to support team-based RL training.<br>
+                &bull; Applied RL techniques such as <strong>reward shaping</strong>, <strong>curriculum learning</strong>, and <strong>self-play</strong> to enhance agents' gameplay.<br>
+            </p>
+        </div>
+
+        <!-- GDCS -->
+        <div class="experience-item club">
+            <h3>Software Developer</h3>
+            <p class="company"><<strong>Google Developer Student Club</strong> • <em>December 2023 – Present</em></p>
+            <p class="description">
+                • Designed and shipped team-based software projects focused on real-world use cases, delivering end-to-end features from design through deployment.<br>
+                • Developed full-stack apps using <strong>NextJS</strong>, JavaScript, CSS, NeonDB.<br>
+                • Won <strong>1st place</strong> at Hack the Sem (Finance sector).<br>
+            </p>
+        </div>
+
     </div>
-      </section>
-      <section id="experience">
-        <p class="section__text__p1">Checkout My</p>
-        <h1 class="title">Experiences</h1>
-        <div class="experience-container">
-            <div class="experience-item">
-              <h3>AI Software Engineer, Co-op</h3>
-              <p class="company"><strong>Harris Computer</strong> • Remote • <em>Ocotber 2025 – Present</em></p>
-              <p class="description">
-                • Scaled <strong>Matcha.ai</strong>, an internal <strong>LLM</strong>-powered copilot, used by <strong>13k+</strong> employees across <strong>200+</strong> subsidiaries.<br />
-                • Shipped full-stack features in <strong>React</strong> and <strong>PostgreSQL</strong> and integrated LLM workflows using <strong>LangChain</strong>.<br />
-                • Worked on <strong>RAG</strong> pipelines integrating <strong>vector search</strong> and enterprise data to power domain-specific chats and copilots.<br />
-                • Designed LLM orchestration with <strong>prompt routing</strong>, <strong>memory systems</strong>, and <strong>multi-model pipelines</strong>.<br />
-                • Delivered production features such as <strong>NanoBanana</strong> integration and <strong>LLM-driven PowerPoint</strong> generation workflows.<br />
-                • Contributed in a fast-moving lean team, shipping <strong>weekly releases</strong> with rapid bug fixes and new feature updates.<br />
-              </p>
-            </div>
-            <div class="experience-item">
-              <h3>Software Engineer, Co-op</h3>
-              <p class="company"><strong>OSI Maritime Systems</strong> • Burnaby, BC • <em>January 2025 – August 2025</em></p>
-              <p class="description">
-                • Built <strong>SmartData</strong>, an internal AI data-anomaly detection tool using <strong>Flask</strong>, <strong>React</strong>, and <strong>SQLite3</strong>, deployed on <strong>IIS</strong>.<br />
-                • Automated <strong>Vessel Sensor Data QA</strong> checks, reducing validation time by <strong>50%</strong> and supporting <strong>40+</strong> system engineers.<br />
-                • Developed the multivariate <strong>XGBoost</strong> model powering <strong>SmartData</strong> to run data anomaly detection in <strong>Python</strong>.<br />
-                • Ingested and transformed vessel system Excel sheets using <strong>Pandas</strong> and <strong>scikit-learn</strong> for clean training and inference.<br />
-                • Improved accuracy through <strong>data cleaning</strong>, <strong>feature engineering</strong>, and class rebalancing using <strong>random oversampling</strong>.<br />
-              </p>
-            </div>
-      <div class="experience-item club">
-        <h3>Reinforcement Learning Engineer</h3>
-        <p class="company"><em>SFU Robot Soccer • September 2024 – Present </em></p>
-                <p class="description">
-                  • Trained multi-agent RL agents using PyTorch and Stable-Baselines3 to improve autonomous robot soccer games
-                  • Created custom simulation environments with MuJoCo and C++ to support team-based RL training
-                  • Applied RL techniques such as reward shaping, curriculum learning, and self-play to enhance agent’s gameplay
-                </p>
-            </div>
-      <div class="experience-item club">
-        <h3>Software Developer</h3>
-        <p class="company"><em>Google Developer Student Club • December 2023 - Present</em></p>
-                <p class="description">
-                    • Collaboratively designed and developed multiple projects with fellow students<br />
-                    • Developed a full-stack web application using NextJS, JavaScript, CSS and NeonDB to create websites<br />
-                    • Recieved 1st place at Hack the sem, representing the finance sector, hosted by Google Developer Student Club
-                </p>
-            </div>
 
+    <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='#projects'"/>
+</section>
+ 
+<!-- PROJECTS -->
+<section id="projects">
+    <p class="section__text__p1" style="color: white;">Checkout my work!</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="project-masonry">
+        <div class="project">
+            <img src="./assets/gradgains.png" alt="Grad Gains thumbnail">
+            <div class="project-info">
+                <h3>Grad Gains</h3>
+                <p>A social app to engage SFU students in investing through community-building features and real use cases.</p>
+            </div>
         </div>
-        <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-        </section>
-        <section id="projects">
-            <p class="section__text__p1">Checkout my work!</p>
-            <h1 class="title">Projects</h1>
-            <div class="project-grid">
-                <div class="project">
-                    <img src="/assets/gradgains.png" alt="Project 1">
-                    <div class="project-info">
-                      <h3>Grad Gains</h3>
-                      <p>A social app to engage SFU students in investing through community-building features.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="/assets/fitpal.webp" alt="Project 2">
-                    <div class="project-info">
-                      <h3>Fit-pal</h3>
-                      <p>Webapp using Flask and OpenCV to correct/track user's excercise forms and give feedback.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="/assets/sydekick.webp" alt="Project 3">
-                    <div class="project-info">
-                      <h3>Syde-Kick AI</h3>
-                      <p>AI model that provides live hit-detection feedback for MMA (Mixed Martial Arts) footage. </p>
-                    </div>
-                </div>
-                <div id="contact" class="contact-container">
-                  <h2 class="contact-title">Get in touch</h2>
-                  <p class="contact-subtitle">Feel free to contact me in any of these ways!</p>
-                  <div class="contact-info">
-                    <a href="mailto:waj4@sfu.ca" target="_blank" class="contact-item">
-                        <img src="./assets/email.png" alt="Email Icon" class="contact-icon">
-                        <p>waj4@sfu.ca</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/woochan-jung-a7833b291/" target="_blank" class="contact-item">
-                        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
-                        <p>Andy Jung</p>
-                    </a>
-                    <a href="https://github.com/autato" target="_blank" class="contact-item">
-                        <img src="./assets/github.png" alt="GitHub Icon" class="contact-icon">
-                        <p>autato</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-        </section>
-    <script src="script.js"></script>
-</body>
 
+        <div class="project">
+            <img src="./assets/fitpal.webp" alt="Fit-pal thumbnail">
+            <div class="project-info">
+                <h3>Fit-pal</h3>
+                <p>Webapp using Flask and OpenCV to correct and track exercise form with visual feedback.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="./assets/sydekick.webp" alt="Syde-Kick AI thumbnail">
+            <div class="project-info">
+                <h3>Syde-Kick AI</h3>
+                <p>AI model providing live hit-detection feedback for MMA footage and analytics.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-hero">
+                <h2 class="contact-title">Get in touch</h2>
+                <p class="contact-subtitle">Feel free to contact me in any of these ways!</p>
+            <div class="contact-info">
+                <a class="contact-item" href="mailto:waj4@sfu.ca" target="_blank">
+                    <img src="./assets/email.png" class="contact-icon"> waj4@sfu.ca
+                </a>
+
+                <a class="contact-item" href="https://www.linkedin.com/in/woochan-jung-a7833b291/" target="_blank">
+                    <img src="./assets/linkedin.png" class="contact-icon"> Andy Jung
+                </a>
+
+                <a class="contact-item" href="https://github.com/autato" target="_blank">
+                    <img src="./assets/github.png" class="contact-icon"> autato
+                </a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
 </html>
