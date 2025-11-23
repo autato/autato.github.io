@@ -396,6 +396,19 @@ section {
     color: #000;
 }
 
+/* Club experience styling: visually highlight student club / team roles */
+.experience-item.club {
+  background-color: #f4f6ff; /* subtle blue-tinted background */
+  border-left: 4px solid #6c5ce7; /* purple accent */
+}
+.experience-item.club .company {
+  color: #6c5ce7; /* match accent color for the company line */
+  font-weight: 600;
+}
+.experience-item.club h3 {
+  color: #2d2b8f; /* slightly darker heading color for contrast */
+}
+
 .arrow {
     position: absolute;
     right: -5rem;
