@@ -324,6 +324,8 @@ section {
   max-width: 200px;
   max-height: 300px;
   object-fit: cover; /* ensure it crops nicely */
+  /* prefer the upper portion of the image for portrait crops */
+  object-position: center top;
 }
 
 .arrow {
@@ -353,11 +355,11 @@ section {
 
 
 .section__pic-container {
-  /* responsive size: min 120px, preferred 18vw, max 180px */
-  width: clamp(120px, 18vw, 180px);
-  height: clamp(120px, 18vw, 180px);
-  max-width: 180px;
-  max-height: 180px;
+  /* portrait-style container: narrower width, taller height to behave like a portrait */
+  width: clamp(110px, 16vw, 160px);      /* min 110px, preferred 16vw, max 160px */
+  height: clamp(150px, 28vw, 240px);     /* min 150px, preferred 28vw, max 240px */
+  max-width: 160px;
+  max-height: 240px;
   margin: 20px;
 }
 
@@ -372,9 +374,9 @@ section {
 @media (max-width: 600px) {
   .section__pic-container {
     width: clamp(80px, 22vw, 120px);
-    height: clamp(80px, 22vw, 120px);
+    height: clamp(110px, 30vw, 160px);
     max-width: 120px;
-    max-height: 120px;
+    max-height: 160px;
   }
 }
 
