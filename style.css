@@ -100,6 +100,12 @@ a:hover {
   max-height: 300px;
 }
 
+.menu-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .menu-links li {
   list-style: none;
 }
@@ -425,20 +431,6 @@ section {
   opacity: 1;
 }
 
-/* Add this to your media queries or at the end of style.css */
-@media screen and (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: 1fr; /* Switch to single column on mobile */
-    grid-auto-rows: 300px;
-  }
-
-  /* Reset the spanning rules on mobile */
-  .project.p1,
-  .project.p6 {
-    grid-column: auto;
-    grid-row: auto;
-  }
-}
 
 /* ----------------------------------------------------
    CONTACT

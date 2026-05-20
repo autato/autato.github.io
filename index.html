@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,9 +26,13 @@
           <span></span><span></span><span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+            <li>
+              <a href="#experience" onclick="toggleMenu()">Experiences</a>
+            </li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -48,7 +52,7 @@
             my resume <img src="./assets/DOWNLOAD.webp" class="emoji" />
           </button>
 
-          <button class="btn btn-color-2" onclick="location.href='#contact'">
+          <button class="btn btn-color-2" onclick="location.href = '#contact'">
             contact info
           </button>
         </div>
@@ -57,12 +61,15 @@
           <img
             src="./assets/linkedin.png"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/woochan-jung-a7833b291/'"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/woochan-jung-a7833b291/'
+            "
           />
           <img
             src="./assets/github.png"
             class="icon"
-            onclick="location.href='https://github.com/autato'"
+            onclick="location.href = 'https://github.com/autato'"
           />
         </div>
       </div>
@@ -93,7 +100,7 @@
       <img
         src="./assets/arrow.png"
         class="icon arrow"
-        onclick="location.href='#experience'"
+        onclick="location.href = '#experience'"
       />
     </section>
 
@@ -203,7 +210,7 @@
       <img
         src="./assets/arrow.png"
         class="icon arrow"
-        onclick="location.href='#projects'"
+        onclick="location.href = '#projects'"
       />
     </section>
 

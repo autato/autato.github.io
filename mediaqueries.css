@@ -10,13 +10,13 @@
 
 @media screen and (max-width: 768px) {
   .project-grid {
-    /* Switch back to 1 column on mobile */
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(300px, auto); /* Allow rows to be flexible */
+    grid-auto-rows: minmax(300px, auto);
   }
 
-  .project:nth-child(1) {
-    /* Reset the span so the first card behaves normally on mobile */
+  /* Reset spanning rules so all cards stack normally on mobile */
+  .project.p1,
+  .project.p6 {
     grid-column: auto;
     grid-row: auto;
   }
