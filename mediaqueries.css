@@ -8,6 +8,21 @@
 
 }
 
+@media screen and (max-width: 600px) {
+  .tech-grid {
+    gap: 0.85rem;
+  }
+
+  .tech-item {
+    width: 78px;
+    padding: 1rem 0.75rem;
+  }
+
+  .tech-item i {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .project-grid {
     grid-template-columns: 1fr;

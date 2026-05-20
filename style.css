@@ -260,6 +260,66 @@ section {
 }
 
 /* ----------------------------------------------------
+   TECH STACK
+---------------------------------------------------- */
+#tech-stack {
+  text-align: center;
+  background: #2c2c2c;
+  position: relative;
+}
+
+#tech-stack .section__text__p1,
+#tech-stack .title {
+  color: white;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 2.5rem auto 0;
+  padding: 0 2rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: #ebe9e1;
+  border-radius: 1rem;
+  padding: 1.2rem 1rem;
+  width: 95px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.tech-item:hover {
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.15);
+}
+
+.tech-item i {
+  font-size: 2.6rem;
+  transition: transform 0.2s ease;
+}
+
+.tech-item:hover i {
+  transform: scale(1.15);
+}
+
+.tech-item span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgb(85, 85, 85);
+  white-space: nowrap;
+}
+
+/* ----------------------------------------------------
    EXPERIENCE
 ---------------------------------------------------- */
 
